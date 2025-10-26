@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zane Printing Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <img src="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" alt="Zane Printing Shop Logo" class="logo-pic">
+        <h2 class="logo-text">ZANE PRINTING SHOP</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="section-content hero-container">
+      <div class="hero-image-wrapper">
+        <img src="Img/Untitled30_20251026193609.png" alt="Sample Product" class="hero-image">
+      </div>
+      <div class="hero-details">
+        <h2 class="title">Customize Your Own Design</h2>
+        <h3 class="subtitle">Print it. Wear it. Own it.</h3>
+        <p class="description">Welcome to Zane Printing Shop — your one-stop place for personalized shirts, mugs, stickers, and more.</p>
+        <div class="buttons">
+          <a href="product.html" class="btn primary-btn">Shop Now</a>
+          <a href="contact.html" class="btn secondary-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Zane Printing Shop — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

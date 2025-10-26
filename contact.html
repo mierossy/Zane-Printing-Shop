@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zane Printing Shop | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" type="image/x-icon">
+</head>
+<body class="body">
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <img src="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" alt="Zane Printing Shop Logo" class="logo-pic">
+        <h2 class="logo-text">ZANE PRINTING SHOP</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Get in Touch</h1>
+      <p class="contact-subtitle">
+        Reach us through our official platforms — we’d love to hear from you.
+      </p>
+      <div class="contact-info">
+        <h2>📞 Contact Us</h2>
+        <p><strong>Address:</strong> #46 Corrigedor Rd. Garcia Hts. Brgy Holy Spirit, Quezon City, Philippines</p>
+        <p><strong>Email:</strong> salazardarwin025@gmail.com</p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/TaraGamersML?rdid=cgRYaMokyJhD8fjX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19dxHWsyNW%2F#" target="_blank">Tara ML</a></p>
+        <p><strong>Lazada:</strong> <a href="https://www.lazada.com.ph/shop/tara-ml?dsource=share&laz_share_info=2223759011_103_3000_0_2223761011_null&laz_token=e1cdb1616c5cc040c74ac1e8b803f18b&exlaz=e_7MiEM65zW3HGip8qo24MCZFmNCmP6gU%2FnnWa525VocjCXvTKdNAtBU7L8axQDWNERCxiM%2Fsqh17lu40WY6EhSs3Nio6kf2U4D3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=2223759011&sub_id6=CPI_EXLAZ/" target="_blank">Tara ML</a></p>
+        <p><strong>Shopee:</strong> <a href="https://shopee.ph/orqueza" target="_blank">Tara ML</a></p>
+        <p><strong>Phone:</strong> 0968-3612-157 / 02 (8366-3431)</p>
+      </div>
+    </div>
+  </section>
+
+
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+    });
+
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.add('clicked');
+        setTimeout(() => {
+        card.classList.remove('clicked');
+        }, 250);
+    });
+    });
+
+  </script>
+</body>
+</html>

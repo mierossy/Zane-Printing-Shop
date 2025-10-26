@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zane Printing Shop | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" type="image/x-icon">
+</head>
+<body class="about">
+    <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <img src="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" alt="Zane Printing Shop Logo" class="logo-pic">
+        <h2 class="logo-text">ZANE PRINTING SHOP</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+    <main class="about-container">
+    <section class="about-hero">
+      <div class="about-text fade-in">
+        <h1>About <span>Zane Printing Shop</span></h1>
+        <p>
+          Zane Printing Shop is a trusted printing solutions provider dedicated to delivering high-quality prints that bring ideas to life.
+          Established in 2021, we have grown into a reliable partner for businesses, schools, organizations, and individuals who value professional,
+          creative, and cost-efficient printing services.
+        </p>
+        <p>
+          With state-of-the-art equipment, innovative design solutions, and a skilled team, we ensure every project meets the highest standards of
+          quality, accuracy, and timeliness.
+        </p>
+      </div>
+
+      <div class="about-image fade-in delay">
+        <img src="Img/d06296a5-da74-481f-8bc3-945a44fec6f0.jpg" alt="Photo">
+      </div>
+    </section>
+
+
+    <section class="mission-vision fade-in">
+      <div class="mv-box">
+        <h2>Our Mission</h2>
+        <p>
+          To provide reliable, affordable, and high-quality printing services that empower
+          individuals and businesses to express their brand and creativity with confidence.
+        </p>
+      </div>
+      <div class="mv-box">
+        <h2>Our Vision</h2>
+        <p>
+          To be recognized as a leading printing partner known for innovation, sustainability,
+          and exceptional customer satisfaction across the country.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="contact-footer">
+    <p>© 2025 Zane Printing Shop — All Rights Reserved.</p>
+  </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        });
+  </script>
+</body>
+</html>
