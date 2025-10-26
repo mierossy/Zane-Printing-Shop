@@ -107,7 +107,7 @@ header {
   justify-content: center;
   overflow: hidden;
   color: var(--white);
-  background: url('Img/Photo\ Prints\ _\ Order\ Quality\ Prints\ Online.jpg') center/cover no-repeat;
+  background: url('Photo\ Prints\ _\ Order\ Quality\ Prints\ Online.jpg') center/cover no-repeat;
 }
 
 .hero-section::before {
